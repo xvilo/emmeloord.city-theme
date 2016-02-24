@@ -1,0 +1,35 @@
+*{
+	box-sizing: border-box;
+	font-family: "source-sans-pro",sans-serif;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+	text-rendering: optimizeLegibility !important;
+	-webkit-font-smoothing: antialiased !important;
+}
+
+body{
+	margin: 0px;
+	padding: 0px;
+}
+
+section#menu{
+	background: #00253E;
+	width: 360px;
+	min-height: 100vh;
+	overflow: auto;
+	float: left;
+}
+
+section#content{
+	width: calc(100vw - 360px);
+	float: left;
+}
+
+#content .container{
+	max-width: calc(960px + 5em);
+	padding: 0em 5em;
+	margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6{
+	text-transform: uppercase;
+}
