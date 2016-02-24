@@ -5,4 +5,11 @@
 	}
 	add_action( 'init', 'register_my_menu' );
 	
-	xvilo_get_header();
+	function xvilo_get_header(){
+		global $post;
+		$key = 'header_slider';
+		$themeta = get_post_meta($post->ID, $key, TRUE);
+		if($themeta != '') {
+			putRevSlider($themeta);
+		}
+	}
